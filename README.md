@@ -11,12 +11,16 @@ El cifrado Atbash es un tipo de cifrado por sustitución en el que se invierte e
 El cifrado Atbash reemplaza cada letra del alfabeto por su letra opuesta. Por ejemplo, la primera letra se cifra como la última, la segunda como la penúltima, y así sucesivamente.
 
 ### Fórmula Matemática
+Para un alfabeto de \(N\) letras, la posición cifrada \(i'\) de una letra que originalmente ocupa la posición \(i\) se determina mediante la siguiente función:
 
-Para un alfabeto de \(N\) letras, la transformación de la posición \(i\) de una letra a su posición cifrada \(i'\) se calcula con la fórmula:
+f(i) = (N - 1) - i
 
-i' = (N - 1) - i
+Donde:
+- \(f(i)\) es el valor de la función que representa la posición cifrada de la letra.
+- \(i\) es la posición original de la letra en el alfabeto, donde \(i \in \{0, 1, 2, \ldots, N-1\}\).
+- \(N\) es el número total de letras en el alfabeto.
 
-donde \(i\) es la posición original de la letra (comenzando desde 0), y \(N\) es el número total de letras en el alfabeto.
+Esta fórmula asegura que la primera letra del alfabeto se mapea a la última, la segunda letra a la penúltima, y así sucesivamente, cumpliendo con el esquema de cifrado Atbash.
 
 ## Implementación en Python
 
