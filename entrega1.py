@@ -36,3 +36,11 @@ def descifrar_atbash(mensaje_cifrado, diccionario):
 mensaje_descifrado = descifrar_atbash(mensaje_cifrado, atbash_dict)
 mensaje_descifrado
 print("Mensaje descifrado del ejercicio dado:", mensaje_descifrado)
+
+# Ejemplo de uso
+mensaje_original_clase = "Hola, ruben"
+mensaje_cifrado_clase = atbash_cifrar_descifrar(mensaje_original_clase)
+mensaje_descifrado_clase = atbash_cifrar_descifrar(mensaje_cifrado_clase)
+
+print("Mensaje original clase:", mensaje_original_clase)
+print("Mensaje cifrado clase:", mensaje_cifrado_clase)
